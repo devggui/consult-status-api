@@ -1,0 +1,44 @@
+{
+  "name": "consultapi",
+  "productName": "consultapi",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ./src/main.js",
+    "develop": "node ./src/index.js",
+    "postinstall": "electron-rebuild",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": {
+    "name": "devggui",
+    "email": "devguiet@gmail.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/plugin-webpack": "^6.1.1",
+    "@vercel/webpack-asset-relocator-loader": "^1.7.3",
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.3",
+    "electron": "^24.1.3",
+    "node-loader": "^2.0.0",
+    "postcss": "^8.4.23",
+    "style-loader": "^3.3.2",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "axios": "^1.3.6",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.6.4",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
+  }
+}
